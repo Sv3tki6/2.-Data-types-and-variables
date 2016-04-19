@@ -1,0 +1,19 @@
+// Write a program that safely compares two floating-point numbers (double) with precision eps = 0.000001.
+Note: Two floating-point numbers a and b cannot be compared directly by a == b because of the nature of the floating-point arithmetic. 
+Therefore, we assume two numbers are equal if they are more closely to each other than a fixed constant eps. //
+
+class CompareFloatingPointNumbers
+{
+    static void Main()
+    {
+        Console.WriteLine("Enter first number: ");
+        double fn = double.Parse(Console.ReadLine());
+        Console.WriteLine("Enter second number: ");
+        double sn = double.Parse(Console.ReadLine());
+        double result = fn - sn;
+        Console.WriteLine("The results is:\n" + result);
+        float cons = 0.000001f;
+        bool checkEqualorNot = (Math.Abs(fn - sn) < cons);
+        Console.WriteLine("The statements is: " + checkEqualorNot);
+    }
+}
