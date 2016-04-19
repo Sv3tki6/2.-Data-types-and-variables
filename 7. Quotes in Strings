@@ -1,0 +1,15 @@
+// Write a program that outputs 'The "use" of quotations causes difficulties.' //
+
+using System;
+
+namespace QuotesinStrings
+{
+    class QuotesinStrings
+{
+        static void Main(string[] args)
+        {
+            string quote = @"The ""use"" of quotations causes difficulties";
+            Console.WriteLine("{0}", quote);
+        }
+    }
+}
