@@ -1,2 +1,2 @@
-# 2.-Data-types-and-variables
-homework
+# Data-types-and-variables
+C# Homework
