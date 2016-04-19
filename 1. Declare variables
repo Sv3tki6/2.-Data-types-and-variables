@@ -1,0 +1,52 @@
+// Declare five variables choosing for each of them the most appropriate of the types byte, sbyte, short, ushort, int, uint, long, ulong to represent the following values: 52130, -115, 4825932, 97, -10000. Choose a large enough type for each number to ensure it will fit in it. Try to compile the code. //
+
+using System;
+
+namespace DeclareVaraiables
+{
+    class DeclareVariables
+        static void Main(string[] args)
+        {
+            sbyte one = 97;
+            Console.WriteLine(("First declared number is 97"), one);
+            sbyte two = -115;
+            Console.WriteLine(("Second declared number is -115"), two);
+            short three = -10000;
+            Console.WriteLine(("Third declared number is -10000"), three);
+            int four = 4825932;
+            Console.WriteLine(("Fifth declared number is 4825932"), four);
+            Console.WriteLine("Thank you. The end.");
+
+        }
+    }
+}
+
+
+// ------OR ANOTHER SOLUTION:  //
+
+
+using System;
+
+namespace DeclareVaraiables
+{
+    class DeclareVariables
+    {
+        static void Main(string[] args)
+        {
+            sbyte one = 97;
+
+            sbyte two = -115;
+
+            short three = -10000;
+
+            ushort four = 52130;
+
+            int five = 4825932;
+
+            Console.WriteLine("One: {0}\nTwo: {1}\nThree: {2}\nFour: {3}\nFive: {4}\n", one, two, three, four, five);
+            
+            Console.WriteLine("Thank you. The end.");
+
+        }
+    }
+}
